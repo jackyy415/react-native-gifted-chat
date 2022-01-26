@@ -441,7 +441,8 @@ class GiftedChat<TMessage extends IMessage = IMessage> extends React.Component<
     const { messages, text } = this.props
     this.setIsMounted(true)
     this.initLocale()
-    this.setMessages(messages || [])
+//     this.setMessages(messages || [])
+    this.setState({ messages: messages || []});
     this.setTextFromProp(text)
   }
 
